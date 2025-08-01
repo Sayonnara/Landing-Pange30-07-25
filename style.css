@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000;
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+
+.logo {
+    width: 350px;
+    z-index: -1;
+    margin-top: -100px;
+}
+
+.logo {
+    display: inline-block;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translate(0)
+    }
+}
+
+.container,
+.persona {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.persona h2 {
+    font-size: 3em;
+    background: linear-gradient(90deg, rgb(244, 5, 96) 45%, rgb(0, 255, 255) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+.persona p {
+    font-size: 20px;
+    max-width: 50%;
+    margin: 0 auto;
+
+}
+
+
+header {
+    align-items: center;
+    position: relative;
+    color: #fff;
+    padding: 50px 20px 100px;
+}
+
+.container-text {
+    font-size: 45px;
+    background: linear-gradient(90deg, rgb(150, 51, 243) 26%, rgb(245, 115, 8) 50%, rgb(246, 255, 0) 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.container-paragraph {
+    font-size: 20px;
+    color: #fff;
+    left: auto;
+    right: auto;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+}
+
+
+.container a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, rgb(114, 4, 187) 30%, rgb(5, 73, 175) 88%);
+
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 100px 20px;
+    position: relative;
+
+
+}
+
+.benifits-card {
+    background: #111;
+    border-radius: 20px;
+    border: 1px solid #20c1ee;
+    padding: 30px;
+    line-height: 1.6;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: transform 2s ease;
+    /*define a suavidade da animação.*/
+
+}
+
+.benifits-card:hover {
+    border: 2px solid #ff0877;
+    transform: scale(1.02);
+    /* Aumenta 2% */
+    animation: vibrar 0.6s linear infinite;
+}
+
+@keyframes vibrar {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-1px);
+    }
+
+    40% {
+        transform: translateX(1px);
+    }
+
+    60% {
+        transform: translateX(-1px);
+    }
+
+    80% {
+        transform: translateX(1px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.benifits-card h3 {
+    font-size: 1.5em;
+    position: relative;
+    bottom: 10px;
+    color: #01f4fc;
+}
+
+.benefits-number {
+    font-size: 3em;
+    font-weight: 700;
+    color: #ff0877;
+}
+
+.indication {
+    font-size: 2em;
+    font-weight: 700;
+    color: #04e8fd;
+    margin-bottom: 30px;
+
+}
+
+.features-card h3 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.features-card {
+    padding: 20px;
+    margin: 0 auto;
+
+}
+
+.features-card span {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 10px;
+    background-color: #2bba07;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+.features-card span:nth-last-child(even) {
+    background-color: #fa137b;
+}
+
+.features-card span:hover {
+    border: 1px solid #cde6e7;
+    transform: scale(1.02);
+}
+
+#contato {
+    position: relative;
+    text-align: center;
+    background-color: #10160f;
+    padding: 20px;
+
+}
+
+#contato a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: #06a711;
+    position: relative;
+    top: 10px;
+
+}
